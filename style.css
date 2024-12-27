@@ -403,3 +403,28 @@ footer {
     opacity: 1;
 }
 
+#why-me {
+    padding: 5rem 0;
+}
+
+.why-me-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.why-me-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.why-me-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
