@@ -39,7 +39,7 @@
         
         <section id="why-me">
             <div class="why-me-container">
-                <h2 class="why-me-title slide-in-left">Why Me?</h2>
+                <h2 class="why-me-title slide-in-left">Expertise<br>&<br>Impact</h2>
                 <div class="why-me-content slide-in-right">
                     <p class="why-me-text">
                         Je ne me contente pas d'analyser des chiffres ; je les transforme en stratégies concrètes qui génèrent des résultats tangibles. Lorsque j'ai fait passer un projet e-commerce de 20K€ à 320K€ en seulement six mois, ce n'était pas un hasard – c'était grâce à une compréhension fine du marché, une anticipation des tendances et des décisions audacieuses mais réfléchies. J'excelle face aux défis, qu'il s'agisse d'optimiser des stratégies de prix, de dénicher des opportunités de croissance ou de simplifier les opérations. Si vous cherchez quelqu'un de passionné, autonome et prêt à avoir un impact immédiat, je suis convaincu d'être la personne qu'il vous faut.
@@ -118,24 +118,32 @@
         </section>
 
         <section id="skills">
-            <h2 class="skills-title">Skills</h2>
+            <h2>Skills</h2>
             <div class="skills-grid">
-                <!-- Technical Skills -->
-                <div class="skill-box">
-                    <h3>Compétences Techniques</h3>
-                    <ul>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="technical.png" class="skill-icon" alt="Technical Skills">
+                        <div class="skill-title">
+                            <h3>Compétences Techniques</h3>
+                        </div>
+                    </div>
+                    <ul class="centered-skills">
                         <li>Excel</li>
-                        <li>Python (pandas, NumPy, matplotlib) </li>
+                        <li>Python (pandas, NumPy, matplotlib)</li>
                         <li>SQL</li>
                         <li>Power BI</li>
                         <li>Google Analytics</li>
                     </ul>
                 </div>
         
-                <!-- E-Commerce Expertise -->
-                <div class="skill-box">
-                    <h3>Expertise E-Commerce</h3>
-                    <ul>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="ecommerce.png" class="skill-icon" alt="E-Commerce Skills">
+                        <div class="skill-title">
+                            <h3>Expertise E-Commerce</h3>
+                        </div>
+                    </div>
+                    <ul class="centered-skills">
                         <li>Stratégies de tarification</li>
                         <li>Analyse concurrentielle</li>
                         <li>Gestion des stocks</li>
@@ -144,10 +152,14 @@
                     </ul>
                 </div>
         
-                <!-- Business Skills -->
-                <div class="skill-box">
-                    <h3>Compétences Business</h3>
-                    <ul>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="business.png" class="skill-icon" alt="Business Skills">
+                        <div class="skill-title">
+                            <h3>Compétences Business</h3>
+                        </div>
+                    </div>
+                    <ul class="centered-skills">
                         <li>Prévision des ventes</li>
                         <li>Segmentation client</li>
                         <li>Suivi des KPIs</li>
@@ -156,10 +168,14 @@
                     </ul>
                 </div>
         
-                <!-- Soft Skills -->
-                <div class="skill-box">
-                    <h3>Compétences Comportementales</h3>
-                    <ul>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="soft-skills.png" class="skill-icon" alt="Soft Skills">
+                        <div class="skill-title">
+                            <h3>Soft Skills</h3>
+                        </div>
+                    </div>
+                    <ul class="centered-skills">
                         <li>Résolution de problèmes</li>
                         <li>Communication</li>
                         <li>Attention aux détails</li>
@@ -169,6 +185,8 @@
                 </div>
             </div>
         </section>
+        
+        
         
         
         <div class="hobbies-section fade-in">
@@ -243,20 +261,23 @@
     <footer>
         <p>&copy; 2024 Salah LATIFY. All rights reserved.</p>
     </footer>
+    
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
         });
-
-        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .slide-up').forEach((el) => {
-            observer.observe(el);
-        });
+    }, {
+        threshold: 0.1
+    });
+    
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .slide-up').forEach((el) => {
+        observer.observe(el);
+    });
     </script>
-</body>
-</html>
+    
+    </body>
+    </html>
+    
