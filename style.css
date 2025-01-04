@@ -509,10 +509,28 @@ footer {
         transform: none;
     }
 
-    .why-me-container {
-        width: 100%;
-        transform: none;
+    @media screen and (max-width: 768px) {
+        .why-me-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .why-me-title {
+            font-size: 2.5rem;
+            text-align: center;
+            white-space: normal;
+        }
+    
+        .why-me-text {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: left;
+            padding: 0 15px;
+        }
     }
+    
 
     section {
         width: 100%;
