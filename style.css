@@ -487,6 +487,27 @@ footer {
     color: #555;
 }
 
+@media screen and (max-width: 768px) {
+    .experience-grid, .skills-grid {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card, .skill-card {
+        margin: 15px auto;
+        width: 90%;
+    }
+
+    .why-me-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby-item {
+        width: 90%;
+    }
+}
 
 
 
