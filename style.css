@@ -489,23 +489,27 @@ footer {
 
 @media screen and (max-width: 768px) {
     .experience-grid, .skills-grid {
-        width: 100%;
-        height: auto;
-        grid-template-columns: 1fr;
+        width: 800px;
+        height: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        transform: scale(0.5);
+        transform-origin: top center;
+        margin-top: -200px;
     }
 
     .experience-card, .skill-card {
-        margin: 15px auto;
-        width: 90%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .why-me-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hobby-item {
-        width: 90%;
+        width: 800px;
+        transform: scale(0.5);
+        transform-origin: top center;
     }
 }
 
