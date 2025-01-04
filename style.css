@@ -510,23 +510,30 @@ footer {
     }
 
     .why-me-container {
-        display: flex;
+        width: 100%;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        padding: 0 20px;
+        margin: 0;
+        overflow: hidden;
     }
 
-    .why-me-title {
-        font-size: 2.5rem;
-        text-align: center;
-        white-space: normal;
+    .why-me-content {
+        width: 100%;
     }
 
     .why-me-text {
+        width: 100%;
         font-size: 16px;
         line-height: 1.6;
         text-align: left;
-        padding: 0 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .why-me-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     section {
