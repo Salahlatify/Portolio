@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendTide</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #0d1225 0%, #1a2145 50%, #241f4a 100%);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #b8ffba;
+        }
+        header p {
+            color: #ccccff;
+            margin-top: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background: #4e62e5;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+        }
+        .icons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .icon-card {
+            background: #1b1e38;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .icon-card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .icon-card h3 {
+            margin: 10px 0;
+            color: #b8ffba;
+        }
+        .testimonials {
+            text-align: center;
+            padding: 50px;
+            background: #12172b;
+        }
+        .testimonials p {
+            font-style: italic;
+            color: #ccc;
+        }
+        footer {
+            background: #1a1e3d;
+            padding: 20px;
+            text-align: center;
+            color: #bbb;
+        }
+        .chart-line {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            height: 300px;
+            background: transparent;
+        }
+        .chart-line svg {
+            width: 100%;
+            height: 100%;
+        }
+        .chart-line path {
+            stroke: #4effa1;
+            stroke-width: 2;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TrendTide</h1>
+        <p>Your ultimate website scraping solution</p>
+    </header>
+    <div class="chart-line">
+        <svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 200 Q 150 50, 300 150 T 600 100 T 900 250" />
+        </svg>
+    </div>
+    <section class="hero">
+        <h2>Analyze Websites. Extract Data. Automate Workflows.</h2>
+        <div class="buttons">
+            <button>Try for Free</button>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <section class="icons-grid">
+        <div class="icon-card">
+            <img src="#" alt="data icon">
+            <h3>Data Extraction</h3>
+            <p>Automate data scraping and get accurate results.</p>
+        </div>
+        <div class="icon-card">
+            <img src="#" alt="analytics icon">
+            <h3>Analytics</h3>
+            <p>Powerful tools to analyze scraped data efficiently.</p>
+        </div>
+        <div class="icon-card">
+            <img src="#" alt="AI icon">
+            <h3>AI Integration</h3>
+            <p>Use machine learning for smarter scraping workflows.</p>
+        </div>
+        <div class="icon-card">
+            <img src="#" alt="security icon">
+            <h3>Secure Scraping</h3>
+            <p>Maintain anonymity and adhere to scraping guidelines.</p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>"TrendTide has revolutionized how we gather and use data!"</p>
+        <p>- Data Solutions Inc.</p>
+    </section>
+    <footer>
+        <p>© 2025 TrendTide | All rights reserved.</p>
+    </footer>
+</body>
+</html>
