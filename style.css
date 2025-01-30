@@ -655,3 +655,10 @@ footer {
     margin-bottom: 30px;
     font-weight: bold;
 }
+#skills {
+    margin-top: 200px; /* Adds space above the skills section */
+}
+
+.experience-grid {
+    margin-bottom: 50px; /* Adds some breathing room below experience section */
+}
